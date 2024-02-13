@@ -1,0 +1,295 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shop</title>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+
+    <link rel="icon" href="images/fav.jpg" type="image/jpeg">
+
+    <style>
+        body {
+            background-color: #ee957a;
+        }
+        .product-card {
+            width: 18rem;
+            margin-bottom: 2rem;
+        }
+        .btn {
+            margin-top: 1rem;
+        }
+        .card-text {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .card {
+            background-color: #aad5e6cb; /* Change this to your desired color */
+            margin: 10px; /* Adjust this to increase or decrease the space around the card */
+            border-radius: 60px;
+            box-shadow: 0 8px 16px 0 rgba(199, 248, 24, 0.966);
+            border-radius: 15px 15px 0 0;
+
+        }
+        .card-title {
+            color: #f70606;
+        }
+
+        .card-text {
+            font-size: 18px;
+        }
+
+        .btn-primary {
+            background-color: #0c07007a;
+        }
+
+        .card-body {
+            padding: 20px;
+
+        }
+
+        .container {
+            padding: auto;
+            background-color: #dd963aea;
+        
+            h1 {
+                font-size: 2em;
+                color: #08066b;
+                text-align: left;
+            }
+
+            h3 {
+                font-size: 1.5em;
+                color: #05000c;
+                text-align: left;
+            }
+
+        }
+
+        .main_bar {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: #c9ab9eec; /* Change this to your desired color */
+                padding: 10px; /* Adjust as needed */
+                width: 100%; /* Adjust as needed */
+            }
+
+.main_bar .navbar-brand,
+.main_bar .dropdown,
+.main_bar .form-inline,
+.main_bar button {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.main_bar .dropdown .dropdown-menu a,
+.main_bar .form-inline input,
+.main_bar button {
+    font-size: 0.8rem; /* Adjust as needed */
+}
+
+.form-inline .input-group {
+    width: 100%;
+}
+
+.form-inline .input-group .form-control {
+    border-right: none; /* Remove the right border */
+}
+
+.form-inline .input-group .btn {
+    border-left: none; /* Remove the left border */
+}
+
+
+
+
+
+
+    </style>
+
+</head>
+<body>
+
+    <div class="main_bar d-flex align-items-center">
+        <!-- Use an image tag for the logo -->
+        <a class="navbar-brand" href="home.html">
+            <img src="images/mLogo.jpg" alt="Jakwalin Cookies Logo" height="50">
+        </a>
+
+        <!-- Add a dropdown button -->
+        <div class="dropdown mx-2">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="images\icons\menu.png" alt="Menu" style="width: 20px; height: 20px;">
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">drplist1</a>
+                <a class="dropdown-item" href="#">drplist2</a>
+                <a class="dropdown-item" href="#">drplist3</a>
+            </div>
+        </div>
+        
+        
+    
+        <!-- Add a search bar and search button -->
+        <form class="form-inline mr-auto">
+            <div class="input-group">
+                <input type="search" class="form-control" placeholder="Search" aria-label="Search">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </div>
+            </div>
+        </form>
+        
+        <!-- Add account settings, support help, cart icon, and dropdown buttons -->
+        <button class="btn btn-outline-primary my-2 my-sm-0 mx-2" type="button">My Account</button>
+        <button class="btn btn-outline-info my-2 my-sm-0 mx-2" type="button">Support</button>
+        <button class="btn btn-outline-warning my-2 my-sm-0 mx-2" type="button">Cart</button>
+    
+    </div>
+    
+
+    <div class="container">
+        <h1>Dive into the world of sweetness!🍭🍭🍭</h1>
+        <h3><p>Don’t resist the temptation!😋</p>
+        <p>Add as many cakes🍰🍰 as you like to your basket🛒🛒 and enjoy😍 😍 !!</p></h3>
+    </div>
+
+        <div class="row">
+            <!-- Repeat this section for each product -->
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card product-card">
+                    <img src="images/chocolate chip cookies/ccc3.jpg" class="card-img-top" alt="Chocolate cakes🍰🍰">
+                    <div class="card-body">
+                        <h5 class="card-title">Chocolate chip cookies</h5>
+                        <p class="card-text">Rich and indulgent, chocolate lover’s dream, packed with deep cocoa flavor. 🍫</p>
+                        <p class="price">$19.00</p>
+                        <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card product-card">
+                    <img src="images/Gingerbread Cookies/gbc3.jpg" class="card-img-top" alt="Gingerbread flavour">
+                    <div class="card-body">
+                        <h5 class="card-title">Gingerbread cookies</h5>
+                        <p class="card-text">Spiced with ginger and molasses,holiday favorite, with icing. 🎄</p>
+                        <p class="price">$25.00</p>
+                        <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card product-card">
+                    <img src="images/Macaron Cookies/mc3.jpg" class="card-img-top" alt="Macaron cookies">
+                    <div class="card-body">
+                        <h5 class="card-title">Macaron cookies</h5>
+                        <p class="card-text"> A French delicacy, light and airy with a crisp shell and a soft, ganache-filled center. 🇫🇷</p>
+                        <p class="price">$33.00</p>
+                        <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card product-card">
+                    <img src="images/Macaroon Cookies/mc3.jpg" class="card-img-top" alt="Macaroon flav.">
+                    <div class="card-body">
+                        <h5 class="card-title">Macaroon cookies</h5>
+                        <p class="card-text">Chewy and sweet, made with coconut, melts in your mouth with every bite. 🥥</p>
+                        <p class="price">$23.00</p>
+                        <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card product-card">
+                    <img src="images/Oatmeal Raisin Cookies/orc1.jpg" class="card-img-top" alt="Oatmeal Raisin Cookies">
+                    <div class="card-body">
+                        <h5 class="card-title">Oatmeal Raisin</h5>
+                        <p class="card-text">Hearty and wholesome, filled with oats and raisins for a chewy, satisfying treat. 🍇</p>
+                        <p class="price">$19.00</p>
+                        <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card product-card">
+                    <img src="images/short bread cookies/sbc1.jpg" class="card-img-top" alt="Short Bread">
+                    <div class="card-body">
+                        <h5 class="card-title">Short bread cookies</h5>
+                        <p class="card-text">A traditional Scottish biscuit, buttery and crumbly, often enjoyed with tea. 🏴󠁧󠁢󠁳󠁣󠁴󠁿</p>
+                        <p class="price">$8.00</p>
+                        <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card product-card">
+                    <img src="images/Biscotti Cookies/bc2.jpg" class="card-img-top" alt="Hot Biscotti">
+                    <div class="card-body">
+                        <h5 class="card-title">Biscotti cookies</h5>
+                        <p class="card-text">Twice-baked Italian cookies, perfect for dipping in coffee, with a satisfying crunch and subtle sweetness. ☕</p>
+                        <p class="price">$47.00</p>
+                        <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card product-card">
+                    <img src="images/Sugar Cookies/sc4.jpg" class="card-img-top" alt="Sugar cakes🍰🍰">
+                    <div class="card-body">
+                        <h5 class="card-title">Sugar cookies</h5>
+                        <p class="card-text"> Sweet and simple, classic delight with tender, crumbly texture and a dusting of sugar on top. 🍪</p>
+                        <p class="price">$23.00</p>
+                        <button class="btn btn-primary add-to-cart" data-price="23.00">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            
+            <!-- End of product section -->
+        </div>
+    </div>
+    <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Add event listener to all "Add to Cart" buttons
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', event => {
+                // Code to add item to cart goes here
+            });
+        });
+
+    document.querySelectorAll('.add-to-cart').forEach(button => {
+        button.addEventListener('click', event => {
+        let price = event.target.getAttribute('data-price');
+        console.log(`Added item to cart with price: ${price}`);
+        // Add your code here to add the item to the cart
+    });
+});
+
+    </script>
+</body>
+
+<!-- Footer -->
+<footer class="footer mt-auto py-3 bg-light">
+    <div class="container">
+     <span class="text-muted">© 2024 Jakwalin Cookies. All rights reserved.</span>
+    </div>
+</footer>
+
+</html>

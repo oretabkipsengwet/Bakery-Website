@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .contact-form {
+            background-color: #fff;
+            margin-top: 10%;
+            margin-bottom: 5%;
+            width: 70%;
+        }
+        .contact-form .form-control, .contact-btn {
+            border-radius:1rem;
+        }
+        .contact-btn {
+            background-color: #ff8533;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container contact-form">
+        <h1>Contact Us</h1>
+        <form>
+            <div class="form-group">
+                <label for="email">Email address:</label>
+                <input type="email" class="form-control" id="email">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone number:</label>
+                <input type="tel" class="form-control" id="phone">
+            </div>
+            <div class="form-group">
+                <label for="comments">Comments and Suggestions:</label>
+                <textarea class="form-control" id="comments" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn contact-btn">Submit</button>
+        </form>
+    </div>
+    <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
